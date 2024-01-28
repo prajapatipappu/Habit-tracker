@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body
+{
+    background-color: rgb(15, 231, 231);
+    height: 100%;
+    width: 100%;
+}
+.nav-bar
+{
+    height: 12vh;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 12px;
+    justify-content: space-between;
+    font-size: 1.6em;
+    color:rgb(255, 0, 0);
+}
+.wrapper
+{
+    min-width: 50%;
+    margin: 35px;
+    border-radius: 15px;
+    align-items: center;
+    background-color: rgb(25, 233, 164);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+.wrapper h1
+{
+    color:rgb(255, 0, 106);
+    font-size: 25px;
+    padding: 15px;
+
+}
+.addtask 
+{
+    display: flex;
+    align-items: center;
+}
+.addtask input
+{
+    border-radius: 9px;
+    padding: 12px;
+    width: 18em;
+    font-size: 1.7em;
+
+}
+.addtask button
+{
+    background-color: black;
+    font-size: 3em;
+    border-radius: 15px;
+    margin: 10px;
+    color: wheat;
+    cursor: pointer;
+
+}
+.btn
+{
+    margin:5px;
+    text-align: center;
+}
+.btn button
+{
+    font-size: 15px;
+    padding: 10px;
+    background-color: #0936ea;
+    border-radius: 10px;
+    margin:12px;
+    color: rgb(240, 248, 255);
+    cursor: pointer;
+    
+}
+.btn a
+{
+    text-decoration: none;
+}
+
+.status
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:80%;
+    margin-top: 10px;
+    justify-content: space-around;
+    font-size: 1.5em;
+    margin-top: 22px;
+    color: black;
+}
+.daily{
+    width: 80%;
+    
+
+}
+.daily li
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+    list-style: none;
+    /* width: 80%; */
+    /* height: 80%; */
+    border-radius: 25px;
+    font-size: 2.5em;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-color: #9958ee;
+    border-style: solid;
+    margin-top: 20px;
+    
+}
+.daily button{
+    /* margin-right: 15px; */
+    /* border-radius: 20px; */
+    /* display: flex; */
+    /* background-color:rgb(255, 162, 0); */
+    color: red;
+    font-size: 30px;
+    border-radius: 20px;
+    border-style: none;
+    padding:10px ;
+    
+    
+   
+   
+    
+}
+.calender {
+    display         : inline-block;
+    margin-left     : 2%;
+    margin-right    : 2%;
+    margin-bottom   : 12px;
+    position        : relative;
+    width           : 50px;
+    height          : 60px;
+    background-color: #FFFFFA;
+    text-align      : center;
+    font-family     : Oswald, sans-serif;
+    font-size       : 10pt;
+    border-radius   : 3px;
+    box-shadow      : 3px 3px 1px grey;
+    overflow        : hidden;
+    user-select     : none;
+    
+}
+.calender i{
+    align-items: center;
+    margin-top: 15px;
+    font-size: 2em;
+}
+
+.day {
+    width           : 100%;
+    background-color: #E54B4B;
+    color: white;
+}
+

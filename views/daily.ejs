@@ -1,0 +1,68 @@
+ <!-- for nav bar -->
+ <nav class = "nav-bar">
+    <div>
+        <h1> Welcome To Habit Tracker</h1>
+    </div>
+</nav>
+
+<div class ="wrapper">
+    <h1>The Ultimate Habit Dashboard!!!</h1>
+    <!-- input form for add task -->
+    <div class="addtask">
+        <form action="/create"method="post">
+        <input type="text"id="input_box" name="name"placeholder="add task" required="true">
+        <button type="submit"><i class="fa-regular fa-square-plus fa-beat"></i></button>
+       </form>
+    </div>
+    <!-- btn for Daily and Weekly -->
+    <div class="btn">
+        <a href="/">
+            <button>Daily</button>
+        </a>
+        <a href="/weekly">
+            <button>Weekly</button>
+        </a>
+
+    </div>
+    <!-- status of icons -->
+    <div class="status">
+        <i class="fa-regular fa-circle-check fa-shake" style="color: #33c516;"></i>Done
+        <i class="fa-solid fa-circle-xmark fa-shake" style="color: red;"></i>Not Done
+        <i class="fa-sharp fa-solid fa-circle-minus fa-shake " style="color: #fbf309;"></i>Unmarked
+
+
+
+    
+
+    </div>
+
+    <ul class="daily">
+
+        <% for ( x of habitnode_tasks){ %>
+            <li>
+                <a href="/all_renews/?taskid=<%=x.id %>&day=<%=x.all_renews[0].id%>"> 
+                         <% if (x.all_renews[0].status=="Done"){%>
+                        <i class="fa-regular fa-circle-check fa-shake" style="color: #33c516;"></i>
+                    <%} else if (x.all_renews[0].status=="None"){%>
+                        <i class="fa-sharp fa-solid fa-circle-minus fa-shake " style="color: #fbf309;"></i>
+             
+                    <%} else{%>
+                        <i class="fa-solid fa-circle-xmark fa-shake" style="color: red;"></i>
+                      
+                    <%}%>
+            
+                </a>
+                </i>
+                <%= x.name %> <button><a href="/delete-tasks/<%=x.id %>"><i class="fa-solid fa-trash fa-shake" style="color: red;"></i>
+                        </a>
+                    </button>
+            </li>
+            
+            
+            </li>
+        <%} %>
+
+    </ul>
+</div>   
+        
+ 
